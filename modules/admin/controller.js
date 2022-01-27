@@ -399,7 +399,7 @@ router.post("/addShowcaseType", async (req, res) => {
                     message: "Showcase Type Already Exists!"
                 });
             } else {
-
+console.log(data);
            
             Admin.ShowcaseType.find().sort({_id:-1}).then(result =>{
                if(result.length === 0){
