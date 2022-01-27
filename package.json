@@ -1,0 +1,49 @@
+{
+  "name": "artcurate-admin-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "14.16.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "debug": "node --inspect-brk server.js",
+    "currency": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TechtoLogicsDevelop/artcurate-admin-backend.git"
+  },
+  "author": "Swarup Saha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TechtoLogicsDevelop/artcurate-admin-backend/issues"
+  },
+  "homepage": "https://github.com/TechtoLogicsDevelop/artcurate-admin-backend#readme",
+  "dependencies": {
+    "aws-sdk": "^2.918.0",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "google-auth-library": "^7.9.1",
+    "ip": "^1.1.5",
+    "is-base64": "^1.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.12.7",
+    "multer": "^1.4.2",
+    "node-fetch": "^2.6.2",
+    "nodemailer": "^6.6.1",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "nodemon": "^2.0.13",
+    "qrcode": "^1.5.0",
+    "twilio": "^3.67.1",
+    "urlencode": "^1.1.0"
+  }
+}

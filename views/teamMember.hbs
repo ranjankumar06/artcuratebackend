@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invite Team Member</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        table, tr, td, p {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+    </style>
+</head>
+<body style="margin:0;padding:0;">
+<table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
+
+    <tr>
+        <td align="center" style="padding:6% 0 6% 0;background:#000000;">
+            <img src="https://artcurate-assets.s3.ap-south-1.amazonaws.com/main-logo-white.png" alt="" style="width:25%;height:auto;display:block;">
+        </td>
+    </tr>
+
+    <tr>
+        <td style="padding: 0 10% 0 10%;">
+            <table style="width:100%;margin-top:30px;border-collapse:collapse;border:0;border-spacing:0;border:1px solid #cccccc;">
+                <tr>
+                    <td style="padding:0;">
+                        <h1 class="code" align="center" class="code" style="font-family:'IBM Plex Serif',serif;font-size:2rem;letter-spacing:5px;margin-bottom:0;margin-top:30px;"></h1><br />
+                        <p class="code-txt" align="center" style="font-family:'IBM Plex Sans',sans-serif;font-size:1rem;letter-spacing:0.5px;margin-top:0;margin-bottom:30px;">{{fullName}} Invited you</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="padding: 0 10% 0 10%;">
+            <table style="width:100%;margin-top:30px;border-collapse:collapse;border:0;border-spacing:0;border:1px solid #cccccc;">
+                <tr>
+                    <td style="padding:5% 10%;">
+                        <p style="font-family:'IBM Plex Sans',sans-serif;font-size:0.9rem;font-weight:400;letter-spacing:0.5px;text-align:justify;">
+                            <b>Dear,</b><br/>
+                        </p>
+                        <p style="font-family:'IBM Plex Sans', sans-serif;font-size:0.9rem;font-weight:400;letter-spacing:0.5px;text-align:left;">
+                            I am delighted to invite you on behalf of Artcurate to become a member today.  <br/>                          <br />
+                           Also here are a few upcoming events that I thought might be of interest to you,
+                            we would be delighted if you could join us......<a href="{{url}}">Confirm</a>
+                            <br />
+                            Thank you for your consideration, I look forward to hearing from you and hope to see you at our next event.
+                            <br />
+                            Best Regards ,<br />
+                            [{{fullName}}] <br/>
+                             {{emailid}}
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="padding: 0 10% 0 10%;">
+            <table style="width:100%;margin-top:30px;border-collapse:collapse;border:0;border-spacing:0;border:1px solid #cccccc;">
+                <tr>
+                    <td style="padding:5% 10%;">
+                        <p class="disclaimer" style="font-family:'IBM Plex Sans',sans-serif;font-size:0.8rem;font-weight:400;letter-spacing:0.5px;color:#cccccc;text-align:left;">
+                            This email was sent from a notification-only address that does not accept incoming email. Please do not reply to this message.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="padding: 0 40% 0 40%;">
+            <table style="width:100%;margin-top:30px;border-collapse:collapse;border:0;border-spacing:0;border:none;">
+                <tr align="center">
+                    <td style="padding:0;">
+                        <a href="https://twitter.com/"><img src="https://artcurate-assets.s3.ap-south-1.amazonaws.com/twitter-icon.png" alt="" style="width:70%;height:auto;display:block;"></a>
+                    </td>
+                    <td style="padding:0;">
+                        <a href="https://instagram.com/"><img src="https://artcurate-assets.s3.ap-south-1.amazonaws.com/instagram-icon.png" alt="" style="width:70%;height:auto;display:block;"></a>
+                    </td>
+                    <td style="padding:0;">
+                        <a href="https://www.facebook.com/"><img src="https://artcurate-assets.s3.ap-south-1.amazonaws.com/facebook-icon.png" alt="" style="width:60%;height:auto;display:block;"></a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="padding:0 5% 0 5%;">
+            <table style="width:100%;margin-top:20px;border-collapse:collapse;border:0;border-spacing:0;border:none;">
+                <tr>
+                    <td align="center" style="padding:0 10%;font-family:'IBM Plex Sans',sans-serif;font-weight:400;letter-spacing:0.5px;">
+                        <p class="copyrights" style="font-family: 'IBM Plex Sans',sans-serif;font-size:0.8rem;font-weight: 400;letter-spacing: 0.5px;color: #cccccc;">
+                            Copyright ©2021 ArtCurate Media Pvt Ltd. All rights reserved.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<style>
+    @media only screen and (max-width: 700px) {
+        .code {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        .code-txt {
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+    @media (min-width: 700px) and (max-width: 1920px) {
+        .code {
+            font-weight: 700;
+            font-size: 3rem;
+        }
+        .code-txt {
+            font-weight: 400;
+            font-size: 1.3rem;
+        }
+    }
+</style>
+</body>
+</html>
