@@ -2,6 +2,7 @@ const express = require("express");
 const ObjectId = require("mongoose").Types.ObjectId;
 const Shop = require("../shops/models");
 // const ShopAnnouce = require("../shops/models")
+const shopdet=require("../shops/ShopModels")
 const userMiddleware = require("../../middleware/user");
 const email = require("../../middleware/email");
 
@@ -59,7 +60,8 @@ router.get("/info/:id", (req, res) => {
 });
 
 // Create a shop
-router.post("/create", userMiddleware.verifyToken, (req, res) => {
+// userMiddleware.verifyToken,
+router.post("/create",  (req, res) => {
   let shopDetails = {
     shopName: req.body.shopName,
     userId: req.body.userId,
@@ -261,6 +263,23 @@ router.put("/announcementupdate/:id", (req, res) => {
       }
     }
   );
+});
+
+
+
+router.post("/createshop", async (req, res) => {
+  const user = await shopdet.findOne({ "email":req.body.email});
+  if (user) {
+    res.json({
+      success: true,
+      message: 'Already use email...'
+  });
+  }else{
+  const subscription = await shopdet.create(req.body);
+  res
+    .status(200)
+    .json({ subscription, success: true, message: "Shop created successfully" });
+  }
 });
 
 module.exports = router;
